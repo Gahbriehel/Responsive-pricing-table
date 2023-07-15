@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: #2f6581;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(70, 28, 60)
+  );
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 20px;
+  transition: all 0.2s ease-in;
+}
+.wrapper:hover {
+  transform: scale(1.1);
+}
+.wrapper:hover .card > h2 {
+  transform: scale(1.1);
+  color: #de2306;
+  letter-spacing: 2;
+}
+.card {
+  margin: 2px;
+  text-align: center;
+}
+
+.card > img {
+  width: 150px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.detail {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+}
+.detail > p {
+  font-size: 0.8rem;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+
+.check {
+  color: teal;
+}
+.nocheck {
+  color: #de2306;
+}
+.detail > p:hover {
+  background-color: rgb(200, 196, 196);
+}
+
+.price {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.price > p {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.price > p > sup,
+.price > p > sub {
+  font-size: 1rem;
+}
+
+.button {
+  background-color: rgb(100, 160, 160);
+  padding: 0.6rem 1.8rem;
+  border-radius: 15px;
+  border: 2px solid;
+  color: rgb(66, 87, 166);
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+.button:hover {
+  border: 2px solid teal;
+  background-color: transparent;
+  color: #de2306;
+  font-weight: 800;
+}
